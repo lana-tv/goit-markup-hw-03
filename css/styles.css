@@ -1,0 +1,206 @@
+
+:root {
+    --font-family-logo: 'Raleway', sans-serif;
+    --color-h1: #ffffff;
+    --color-title-main: #212121;
+    --color-text-main: #757575;
+    --color-hover-focus: #2196f3;
+    --temporary-background-color: rgb(174, 223, 144);
+}
+
+body {
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+    color: var(--color-text-main); 
+    background-color: var(--temporary-background-color);
+}
+
+ul {
+    list-style: none;
+}
+
+.logo {
+        font-family: var(--font-family-logo);
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+        color: var(--color-title-main);
+}
+
+.logo-begin {
+    color: var(--color-hover-focus);
+    text-decoration: none;
+}
+
+.logo-footer {
+    font-family: var(--font-family-logo);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--color-h1);
+    text-decoration: none;
+}       
+        
+.text-header {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--color-title-main);
+}
+
+.text-header:hover,
+.text-header:focus {
+    color: var(--color-hover-focus);
+}
+
+.text-header-gray {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--color-text-mainn);
+}
+
+/* Page 1  */
+
+.title-h1 {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-h1);
+}
+
+.title-h1-button {
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--color-h1);
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    background: var(--color-hover-focus);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.title-h2 {
+    /* font-weight: 700; */
+    font-size: 36px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--color-title-main);
+}
+
+.title-dignity {
+    /* font-weight: 700; */
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-title-main);
+}
+
+.title-dignity-text {
+    /* font-weight: 400; */
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    /* color: var(--color-text-main); */
+}
+
+.title-person {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    color: var(--color-title-main);
+}
+
+.title-person-text {
+    /* font-weight: 400; */
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    /* color: var(--color-text-main); */
+}
+
+.adress {
+    font-style: normal;
+    /* font-weight: 400; */
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--color-h1);
+}
+
+.adress:hover,
+.adress:focus {
+    color: var(--color-hover-focus);
+}
+
+.adress-link {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+
+.adress-link:hover,
+.adress-link:focus {
+    color: var(--color-hover-focus);
+}
+
+/* Page 2 */
+
+.portfolio-btn {
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    color: var(--color-title-main);
+    background-color: #f5f4fA;
+
+    /* text-align: center;
+    height: 38px; */
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+    color: var(--color-h1);
+    background-color: var(--color-hover-focus);
+}
+
+.portfolio {
+    text-decoration: none;  
+}
+
+.portfolio-works {
+    /* font-weight: 700; */
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+    color: var(--color-title-main);
+}
+
+.portfolio-works-text {
+    /* font-weight: 400; */
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--color-text-main);
+}
