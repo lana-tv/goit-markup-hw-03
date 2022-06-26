@@ -30,6 +30,7 @@ h1, h2, h3, h4, h5, h6, ul, li, p {
     padding-right: 15px;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 94px;
     }
 
 .containerh1 {
@@ -98,9 +99,7 @@ ul {
 
 .logo-begin {
     display: inline-block;
-    margin-top: 24px;
-    margin-bottom: 25px;
-
+    
     color: var(--color-hover-focus);
     text-decoration: none;
 
@@ -225,6 +224,7 @@ ul {
     justify-content: space-between;
     gap: 30px;
     flex-basis: calc((100% - 3*30px) / 4);
+    /* outline: 4px solid black; */
 }
 
 .title-dignity {
@@ -278,7 +278,7 @@ ul {
 }
 
 .title-person-text {
-    margin-bottom: 124px;
+    margin-bottom: 30px;
     text-align: center;
 
     /* font-weight: 400; */
@@ -339,6 +339,14 @@ ul {
 
 /* Page 2 */
 
+.distance {
+    margin-top: 100px;
+  }
+
+.all-portfolio {
+    display: flex;
+}
+
 .portfolio-btn {
     font-family: 'Roboto', 'Open Sans', sans-serif;
     font-weight: 500;
@@ -348,8 +356,18 @@ ul {
     color: var(--color-title-main);
     background-color: #f5f4fA;
 
-    /* text-align: center;
-    height: 38px; */
+    text-align: center;
+    height: 38px;
+    border-radius: 4px;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.all-portfolio-item:not(:last-child) {
+    margin-right: 8px;
+    margin-bottom: 50px;
 }
 
 .portfolio-btn:hover,
@@ -362,18 +380,53 @@ ul {
     text-decoration: none;
 }
 
+.portfolio-table {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: (calc(100% - 2*30px)/3);
+
+}
+
 .portfolio-works {
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-bottom: 4px;
     /* font-weight: 700; */
     font-size: 18px;
     line-height: 2.0;
     letter-spacing: 0.06em;
     color: var(--color-title-main);
+
+    /* outline: 4px solid white; */
 }
 
 .portfolio-works-text {
+    padding-left: 24px;
+    padding-bottom: 20px;
+
     /* font-weight: 400; */
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--color-text-main);
+
+    /* outline: 4px solid red; */
+}
+
+.container-footer {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.logo-f {
+    display: inline-block;
+    margin-top: 60px;
+    margin-bottom: 20px;
+
+    color: var(--color-hover-focus);
+    text-decoration: none;
 }

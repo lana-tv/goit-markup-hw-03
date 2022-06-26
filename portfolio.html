@@ -21,65 +21,73 @@
 
     <body>
 
-        <header>
+        <header class="page-header">
         
-            <nav>
+            <div class="container main-box">
         
-                <a href="/" class="logo">
-                    <p>
-                        <span class="logo-begin">Web</span>Studio
-                    </p>
-                </a>
+                <nav class="header-box-left">
         
-                <ul>
-                    <li><a class="text-header" href="./index.html">Студия</a></li>
-                    <li><a class="text-header" href="#">Портфолио</a></li>
-                    <li><a class="text-header" href="#">Контакты</a></li>
+                    <div class="header-row">
+        
+                        <a href="/" class="logo">
+                            <p>
+                                <span class="logo-begin">Web</span>Studio
+                            </p>
+                        </a>
+        
+                        <ul class="text-in-header">
+                            <li class="text-item"><a class="text-header" href="#">Студия</a></li>
+                            <li class="text-item"><a class="text-header" href="./portfolio.html">Портфолио</a></li>
+                            <li class="text-item"><a class="text-header" href="#">Контакты</a></li>
+                        </ul>
+        
+                    </div>
+        
+                </nav>
+        
+                <ul class="header-box-right">
+        
+                    <li class="text-item"><a class=text-header-gray href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li class="text-item"><a class=text-header-gray href="tel:+380961111111">+38 096 111 11 11</a></li>
+        
                 </ul>
         
-            </nav>
-        
-            <ul>
-        
-                <li><a class=text-header-gray href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a class=text-header-gray href="tel:+380961111111">+38 096 111 11 11</a></li>
-        
-            </ul>
+            </div>
         
         </header>
 
 
-        <main>
+        <main class="container">
 
-            <section>
+            <section class="containerh1 distance">
 
-                <h2 class="title-h2">Образцы работ</h2>
+                <h2 class="title-h2-hidden">Образцы работ</h2>
 
-                <ul>
+                <ul class="all-portfolio">
 
-                    <li>
+                    <li class="all-portfolio-item">
                         <button class="portfolio-btn cursor" type="button">Все</button>
                     </li>
 
-                    <li>
+                    <li class="all-portfolio-item">
                         <button class="portfolio-btn cursor" type="button">Веб-сайты</button>
                     </li>
 
-                    <li>
+                    <li class="all-portfolio-item">
                         <button class="portfolio-btn cursor" type="button">Приложения</button>
                     </li>
 
-                    <li>
+                    <li class="all-portfolio-item">
                         <button class="portfolio-btn cursor" type="button">Дизайн</button>
                     </li>
 
-                    <li>
+                    <li class="all-portfolio-item">
                         <button class="portfolio-btn cursor" type="button">Маркетинг</button>
                     </li>
 
                 </ul>
 
-                <ul>
+                <ul class="portfolio-table">
                     <li>
                         <a class="portfolio" href="./images/page2portfolio/tehnokryak1.jpg"> 
                         <img src="./images/page2portfolio/tehnokryak1.jpg" alt="Веб-сайт Технокряк" width="370" height=294>
@@ -154,21 +162,21 @@
 
         </main>
 
-    <footer>
+    <footer class="container-footer">
     
         <a href="/" class="logo-footer">
             <p>
-                <span class="logo-begin">Web</span>Studio
+                <span class="logo-f">Web</span>Studio
             </p>
         </a>
     
         <address class="adress">
     
-            г. Киев, пр-т Леси Украинки, 26<br />
+            <p class="adress-margin">г. Киев, пр-т Леси Украинки, 26<br /></p>
     
             <a class="adress-link" href="mailto:info@devstudio.com">info@devstudio.com</a><br />
     
-            <a class="adress-link" href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="adress-link-last" href="tel:+380961111111">+38 096 111 11 11</a>
     
         </address>
     
