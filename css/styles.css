@@ -19,29 +19,36 @@ h1, h2, h3, h4, h5, h6, ul, li {
 }
 
 .page-header {
-    background-color: tomato;
+    /* background-color: tomato; */
 }
 
 .container {
+    display: flex;
+    outline: 4px solid black;
+
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-right: auto;
     margin-left: auto;
 
-    outline: 4px solid black;
     }
 
 .header-box-left {
     display: flex;
     justify-content: space-between;
-    outline: 4px solid black;
-    
-}    
+    outline: 4px solid blue;
+    }    
 
 .header-row {
     display: flex;
     justify-content: space-between;
+}
+
+.header-box-right {
+    display: flex;
+    justify-content: space-between;
+    outline: 4px solid green;
 }
 
 :root {
@@ -64,6 +71,9 @@ ul {
 }
 
 .logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+
     font-family: var(--font-family-logo);
     font-weight: 700;
     font-size: 26px;
@@ -76,6 +86,7 @@ ul {
 .logo-begin {
     color: var(--color-hover-focus);
     text-decoration: none;
+
 }
 
 .logo-footer {
@@ -94,20 +105,23 @@ ul {
     }
 
 .text-header {
+    display: block;
+    padding-top: 29px;
+    padding-bottom: 32px;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.17;
     letter-spacing: 0.02em;
     text-decoration: none;
     color: var(--color-title-main);
-      
 }
 
-/* .text-header {
+/* .text-header:not(:last-child) {
     margin-right: 50px;
 } */
 
-.text-header:not(:last-child) {
+.text-header + .text-header {
     margin-right: 50px;
 }
 
@@ -117,6 +131,10 @@ ul {
 }
 
 .text-header-gray {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.17;
