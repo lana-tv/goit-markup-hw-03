@@ -23,16 +23,20 @@ h1, h2, h3, h4, h5, h6, ul, li {
 }
 
 .container {
-    display: flex;
-    outline: 4px solid black;
+   outline: 4px solid black;
 
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-right: auto;
     margin-left: auto;
-
     }
+
+.main-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .header-box-left {
     display: flex;
@@ -73,6 +77,7 @@ ul {
 .logo {
     padding-top: 24px;
     padding-bottom: 25px;
+    margin-right: 88px;
 
     font-family: var(--font-family-logo);
     font-weight: 700;
@@ -102,13 +107,14 @@ ul {
 
 .text-in-header {
     display: flex;
+    align-items: center;
     }
 
 .text-header {
     display: block;
     padding-top: 29px;
     padding-bottom: 32px;
-
+    
     font-weight: 500;
     font-size: 14px;
     line-height: 1.17;
@@ -121,7 +127,7 @@ ul {
     margin-right: 50px;
 } */
 
-.text-header + .text-header {
+.text-in-header .text-header + .text-header {
     margin-right: 50px;
 }
 
@@ -141,6 +147,10 @@ ul {
     letter-spacing: 0.02em;
     text-decoration: none;
     color: var(--color-text-mainn);
+}
+
+.text-header-gray + .text-header-gray {
+    margin-right: 50px;
 }
 
 /* Page 1  */
