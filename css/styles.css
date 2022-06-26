@@ -7,7 +7,7 @@ html {
     box-sizing: inherit;
 }
 
-h1, h2, h3, h4, h5, h6, ul, li {
+h1, h2, h3, h4, h5, h6, ul, li, p {
     padding-top: 0px;
     padding-left: 0px;
     padding-bottom: 0px;
@@ -31,6 +31,17 @@ h1, h2, h3, h4, h5, h6, ul, li {
     margin-right: auto;
     margin-left: auto;
     }
+
+.containerh1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    outline: 4px solid teal;
+
+    /* padding-left: 15px;
+    padding-right: 15px; */
+    
+}
 
 .main-box {
     display: flex;
@@ -89,6 +100,10 @@ ul {
 }
 
 .logo-begin {
+    display: inline-block;
+    margin-top: 24px;
+    margin-bottom: 25px;
+
     color: var(--color-hover-focus);
     text-decoration: none;
 
@@ -112,7 +127,7 @@ ul {
 
 .text-header {
     display: block;
-    padding-top: 29px;
+    padding-top: 32px;
     padding-bottom: 32px;
     
     font-weight: 500;
@@ -123,17 +138,17 @@ ul {
     color: var(--color-title-main);
 }
 
-/* .text-header:not(:last-child) {
-    margin-right: 50px;
-} */
-
-.text-in-header .text-header + .text-header {
+.text-item:not(:last-child) > .text-header {
     margin-right: 50px;
 }
 
 .text-header:hover,
 .text-header:focus {
     color: var(--color-hover-focus);
+}
+
+.text-item:not(:last-child) > .text-header-gray {
+    margin-right: 50px;
 }
 
 .text-header-gray {
@@ -153,9 +168,16 @@ ul {
     margin-right: 50px;
 }
 
+.text-header-gray:hover,
+.text-header-gray:focus {
+    color: var(--color-hover-focus);
+}
 /* Page 1  */
 
 .title-h1 {
+    text-align: center;
+    margin-top: 200px;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -165,6 +187,12 @@ ul {
 }
 
 .title-h1-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 280px;
+
     font-family: 'Roboto', 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 16px;
@@ -172,9 +200,6 @@ ul {
     letter-spacing: 0.06em;
     color: var(--color-h1);
 
-    display: flex;
-    align-items: center;
-    text-align: center;
     width: 200px;
     height: 50px;
     background: var(--color-hover-focus);
@@ -186,6 +211,10 @@ ul {
     cursor: pointer;
 }
 
+.title-h2-hidden {
+    display: none;
+}
+
 .title-h2 {
     /* font-weight: 700; */
     font-size: 36px;
@@ -194,7 +223,16 @@ ul {
     color: var(--color-title-main);
 }
 
+.dignity {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-basis: calc((100% - 3*30px) / 4);
+}
+
 .title-dignity {
+    margin-top: 94px;
+    margin-bottom: 10px;
     /* font-weight: 700; */
     font-size: 14px;
     line-height: 1.14;
@@ -204,6 +242,8 @@ ul {
 }
 
 .title-dignity-text {
+    margin-top: 0px;
+    margin-bottom: 94px;
     /* font-weight: 400; */
     font-size: 14px;
     line-height: 1.71;
@@ -211,7 +251,28 @@ ul {
     /* color: var(--color-text-main); */
 }
 
+.illustration {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 94px;
+    gap: 30px;
+}
+
+.title-h2-team {
+    margin-top: 94px;
+    margin-bottom: 50px;
+
+    font-size: 36px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--color-title-main);
+}
+
 .title-person {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.9;
@@ -220,6 +281,9 @@ ul {
 }
 
 .title-person-text {
+    margin-bottom: 124px;
+    text-align: center;
+
     /* font-weight: 400; */
     font-size: 16px;
     line-height: 1.9;
@@ -236,14 +300,39 @@ ul {
     color: var(--color-h1);
 }
 
-.adress:hover,
-.adress:focus {
+.adress-margin:hover,
+.adress-margin:focus {
     color: var(--color-hover-focus);
 }
 
-.adress-link {
+.adress-link:hover,
+.adress-link:focus {
+    color: var(--color-hover-focus);
+}
+
+.adress-link-last:hover,
+.adress-link-last:focus {
+    color: var(--color-hover-focus);
+}
+
+.adress-link,
+.adress-link-last {
+    display: inline-block;
+    
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
+}
+
+.adress-margin {
+    margin-bottom: 9px; 
+   }
+
+.adress-link {
+    margin-bottom: 9px;
+}
+
+.adress-link-last {
+    margin-bottom: 60px;
 }
 
 .adress-link:hover,
