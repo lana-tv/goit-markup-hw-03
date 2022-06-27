@@ -18,23 +18,38 @@ h1, h2, h3, h4, h5, h6, ul, li, p {
     margin-right: 0px;
 }
 
-.page-header {
+.page {
+    border-bottom: 1px solid var(--color-border);
     /* background-color: tomato; */
 }
 
-.container-h {
+.container-header {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-right: auto;
     margin-left: auto;
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 25px;
 
     /* outline: 4px solid blue; */
 }
 
-.container {
-   /* outline: 4px solid black; */
+.container-hero {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 200px;
+    padding-top: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    background: var(--footer-color);
+}
 
+.container-dignity {
+    width: 1200px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -43,31 +58,35 @@ h1, h2, h3, h4, h5, h6, ul, li, p {
     padding-top: 94px;
     margin-right: auto;
     margin-left: auto;
+
+    /* outline: 4px solid black; */
 }
 
-.containerh1 {
+.container-illustration {
+    width: 1200px;
     display: flex;
-    
     flex-direction: column;
     align-items: center;
+    padding-bottom: 94px;
+    margin-right: auto;
+    margin-left: auto;
 
     /* outline: 4px solid teal; */
 }
 
-.main-box {
+.header-box {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid var(--color-border);
 }
 
-.header-box-left {
+.nav {
     display: flex;
     justify-content: space-between;
-    /* outline: 4px solid blue; */
+    /* outline: 4px solid red; */
     }    
 
-.header-row {
+.logo-line {
     display: flex;
     justify-content: space-between;
 }
@@ -84,14 +103,14 @@ h1, h2, h3, h4, h5, h6, ul, li, p {
     --color-title-main: #212121;
     --color-text-main: #757575;
     --color-hover-focus: #2196f3;
-    --temporary-background-color: rgb(174, 223, 144);
+    --footer-color: #2F303A;
     --color-border: #eeeeee;
 }
 
 body {
     font-family: 'Roboto', 'Open Sans', sans-serif;
     color: var(--color-text-main);
-    background-color: var(--temporary-background-color);
+    
 }
 
 ul {
@@ -99,8 +118,6 @@ ul {
 }
 
 .logo {
-    padding-top: 24px;
-    padding-bottom: 25px;
     margin-right: 88px;
 
     font-family: var(--font-family-logo);
@@ -114,7 +131,6 @@ ul {
 
 .logo-begin {
     display: inline-block;
-    
     color: var(--color-hover-focus);
     text-decoration: none;
 
@@ -138,9 +154,7 @@ ul {
 
 .text-header {
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    
+        
     font-weight: 500;
     font-size: 14px;
     line-height: 1.17;
@@ -164,9 +178,7 @@ ul {
 
 .text-header-gray {
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-
+    
     font-weight: 500;
     font-size: 14px;
     line-height: 1.17;
@@ -187,8 +199,7 @@ ul {
 
 .title-h1 {
     text-align: center;
-    margin-top: 200px;
-
+    
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -202,8 +213,7 @@ ul {
     justify-content: center;
     align-items: center;
     margin-top: 30px;
-    margin-bottom: 280px;
-
+    
     font-family: 'Roboto', 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 16px;
@@ -243,7 +253,6 @@ ul {
 }
 
 .title-dignity {
-    margin-top: 94px;
     margin-bottom: 10px;
     /* font-weight: 700; */
     font-size: 14px;
@@ -254,8 +263,6 @@ ul {
 }
 
 .title-dignity-text {
-    margin-top: 0px;
-    margin-bottom: 94px;
     /* font-weight: 400; */
     font-size: 14px;
     line-height: 1.71;
@@ -266,7 +273,6 @@ ul {
 .illustration {
     display: flex;
     margin-top: 50px;
-    margin-bottom: 94px;
     gap: 30px;
 }
 
@@ -321,13 +327,7 @@ ul {
     color: var(--color-hover-focus);
 }
 
-.adress-link-last:hover,
-.adress-link-last:focus {
-    color: var(--color-hover-focus);
-}
-
-.adress-link,
-.adress-link-last {
+.adress-link {
     display: inline-block;
     
     color: rgba(255, 255, 255, 0.6);
@@ -342,8 +342,8 @@ ul {
     margin-bottom: 9px;
 }
 
-.adress-link-last {
-    margin-bottom: 60px;
+/* .adress-link-last {
+    margin-bottom: 60px; */
 }
 
 .adress-link:hover,
@@ -356,6 +356,7 @@ ul {
 .all-portfolio {
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .portfolio-btn {
@@ -378,7 +379,6 @@ ul {
 
 .all-portfolio-item:not(:last-child) {
     margin-right: 8px;
-    margin-bottom: 50px;
 }
 
 .portfolio-btn:hover,
@@ -396,53 +396,60 @@ ul {
     gap: 30px;
     flex-wrap: wrap;
     width: (calc(100% - 2*30px)/3);
+}
 
+.portfolio-block {
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-bottom: 20px;
+    
+    
+    border-right: 1px solid var(--color-border);
+    border-left: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+
+    /* outline: 4px solid blueviolet; */
 }
 
 .portfolio-works {
-    padding-top: 20px;
-    padding-left: 24px;
     padding-bottom: 4px;
     /* font-weight: 700; */
     font-size: 18px;
     line-height: 2.0;
     letter-spacing: 0.06em;
     color: var(--color-title-main);
-    border-right: 1px solid var(--color-border);
-    border-left: 1px solid var(--color-border);
-
+   
     /* outline: 4px solid white; */
 }
 
 .portfolio-works-text {
-    padding-left: 24px;
-    padding-bottom: 20px;
-    border-right: 1px solid var(--color-border);
-    border-left: 1px solid var(--color-border);
-    border-bottom: 1px solid var(--color-border);
-
+   
     /* font-weight: 400; */
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--color-text-main);
 
-    /* outline: 4px solid red; */
+    /* outline: 4px solid red; */ */
 }
 
+.footer {
+    background: var(--footer-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 .container-footer {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-right: auto;
     margin-left: auto;
-
+   
     /* outline: 4px solid red; */
 }
 
 .logo-f {
     display: inline-block;
-    margin-top: 60px;
     margin-bottom: 20px;
 
     color: var(--color-hover-focus);
