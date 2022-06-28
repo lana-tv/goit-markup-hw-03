@@ -18,62 +18,44 @@ h1, h2, h3, h4, h5, h6, ul, li, p {
     margin-right: 0px;
 }
 
-.page {
+.page-header {
+    padding-top: 24px;
+    padding-bottom: 25px;
     border-bottom: 1px solid var(--color-border);
     /* background-color: tomato; */
 }
 
-.container-header {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    display: flex;
-    padding-top: 24px;
-    padding-bottom: 25px;
 
-    /* outline: 4px solid blue; */
-}
-
-.container-hero {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
+.hero {
     padding-bottom: 200px;
     padding-top: 200px;
-    margin-right: auto;
-    margin-left: auto;
     background: var(--footer-color);
 }
 
-.container-dignity {
+.container {
     width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    /* outline: 4px solid red; */
+}
+
+.hero-accommodation {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 94px;
-    padding-top: 94px;
-    margin-right: auto;
-    margin-left: auto;
-
-    /* outline: 4px solid black; */
 }
 
-.container-illustration {
-    width: 1200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.dignity {
     padding-bottom: 94px;
-    margin-right: auto;
-    margin-left: auto;
+    padding-top: 94px;
+}
 
-    /* outline: 4px solid teal; */
+.illustration {
+    padding-bottom: 94px;
 }
 
 .header-box {
@@ -240,13 +222,14 @@ ul {
 
 .title-h2 {
     /* font-weight: 700; */
+    text-align: center;
     font-size: 36px;
-    line-height: 1.7;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--color-title-main);
 }
 
-.dignity {
+.dignity-ul {
     display: flex;
     justify-content: space-between;
     gap: 30px;
@@ -272,7 +255,7 @@ ul {
     /* color: var(--color-text-main); */
 }
 
-.illustration {
+.illustration-list {
     display: flex;
     gap: 30px;
     margin-top: 50px;
@@ -280,17 +263,22 @@ ul {
 
 .title-h2-team {
     margin-bottom: 50px;
+    text-align: center;
     
     font-size: 36px;
-    line-height: 1.7;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--color-title-main);
 }
 
-.title-person {
-    margin-top: 30px;
-    margin-bottom: 10px;
+.person-block {
+    padding-top: 30px;
+    padding-bottom: 30px;
     text-align: center;
+}
+
+.title-person {
+    margin-bottom: 10px;
 
     font-weight: 500;
     font-size: 16px;
@@ -300,9 +288,6 @@ ul {
 }
 
 .title-person-text {
-    margin-bottom: 30px;
-    text-align: center;
-
     /* font-weight: 400; */
     font-size: 16px;
     line-height: 1.9;
@@ -355,6 +340,11 @@ ul {
 
 /* Page 2 */
 
+.portfolio {
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
+
 .all-portfolio {
     display: flex;
     justify-content: center;
@@ -371,7 +361,7 @@ ul {
     background-color: #f5f4fA;
 
     text-align: center;
-    height: 38px;
+    /* height: 38px; */
     border-radius: 4px;
     padding-left: 22px;
     padding-right: 22px;
@@ -439,15 +429,6 @@ ul {
     background: var(--footer-color);
     padding-top: 60px;
     padding-bottom: 60px;
-}
-.container-footer {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-right: auto;
-    margin-left: auto;
-   
-    /* outline: 4px solid red; */
 }
 
 .logo-f {
